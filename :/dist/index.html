@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TACL Restaurant | Moderní gastronomie v Holešově</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            colors: {
+              primary: '#0c0a09', // stone-950 (darker)
+              accent: '#d97706', // amber-600
+              secondary: '#44403c', // stone-700
+              light: '#fafaf9', // stone-50
+              gold: '#cca35d', // custom gold
+            },
+            backgroundImage: {
+              'pattern-dots': "radial-gradient(#44403c 1px, transparent 1px)",
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.8s ease-out forwards',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'ken-burns': 'kenBurns 20s ease-out infinite alternate',
+              'slide-in': 'slideIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              kenBurns: {
+                '0%': { transform: 'scale(1)' },
+                '100%': { transform: 'scale(1.1)' },
+              },
+              slideIn: {
+                 '0%': { transform: 'translateX(-100%)' },
+                 '100%': { transform: 'translateX(0)' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #fafaf9;
+        color: #1c1917;
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.4/client",
+    "react-dom": "https://esm.sh/react-dom@^19.2.4",
+    "react/jsx-runtime": "https://esm.sh/react@^19.2.4/jsx-runtime",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-2-nq8nto.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
